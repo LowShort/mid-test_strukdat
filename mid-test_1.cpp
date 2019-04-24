@@ -18,10 +18,15 @@ void createList(List& First) {
 	First = NULL;
 }
 
+void namapembeli(pointer& pBaru){
+	pBaru = new SLL;
+	cout<<"Masukkan nama pembeli : "; cin.ignore();cin.getline(pBaru->nama,20);
+	pBaru -> next = NULL;
+}
+
 void createElmt(pointer& pBaru) {
 	pBaru = new SLL; 
-	cout<<"Masukkan nama pembeli : "; cin.ignore();cin.getline(pBaru->nama,20);
-	cout<<"Masukkan nama makanan : "; cin.getline(pBaru->menu,20);
+	cout<<"Masukkan nama makanan : "; cin.ignore();cin.getline(pBaru->menu,20);
 	cout <<"Masukkan jumlah makanan : "; cin >> pBaru->jumlah;
 	cout<<"Masukkan harga satuan : "; cin >> pBaru->harga;
 	pBaru->next = NULL; 
@@ -74,6 +79,7 @@ int main() {
 	//char key = 'C';
 
 	createList(meh);
+	namapembeli(p);
 	cout<<"Masukkan banyak jenis makanan : ";cin>>n;
 	
 	for (int i=0;i<=n;i++){
