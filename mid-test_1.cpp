@@ -80,6 +80,8 @@ int main() {
 		createElmt(p);
 		insertFirst(meh, p);
 	}
+	
+	traversal(meh);
 
 /*	cout << "Masukkan kunci pencarian : "; cin >> key; //B
 	linearSearch(meh, key, ketemu, p);
