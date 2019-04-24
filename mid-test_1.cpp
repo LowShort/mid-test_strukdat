@@ -49,9 +49,9 @@ void traversal(List First) {
 	}
 	else {
 		pBantu = First;
+		cout<<setw(4)<<"No"<<setw(20)<<"Nama"<<setw(7)<<"Jumlah"<<setw(12)<<"Harga Satuan";
 		do {
 			cout<<"Nama pemesan : "<<pBantu->nama;
-			cout<<setw(4)<<"No"<<setw(20)<<"Nama"<<setw(7)<<"Jumlah"<<setw(12)<<"Harga Satuan";
 			cout<<setw(4)<<i<<setw(20)<<pBantu->menu<<setw(7)<<pBantu->jumlah<<setw(12)<<pBantu->harga;
 			i++;
 			pBantu = pBantu->next;
